@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* module start */
+.module_one {
+    padding: 100px 0px;
+    background-color: #f7f8fc;
+}
+
+.hero-banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.left-col {
+    flex-basis: 42%;
+    margin-right: 8%;
+}
+
+.right-col {
+    flex-basis: 50%;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: #030047;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.banner-heading h1 {
+    font-size: 2.8em;
+    line-height: 68px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1.1px;
+    font-family: 'Inter', sans-serif;
+    color: #030047;
+
+
+}
+
+.banner-paragrap p {
+    font-size: 18px;
+    color: #030047;
+    line-height: 30px;
+    padding-bottom: 6.5%;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.banner-video {
+    padding: 50px 0px;
+}
+.main-button a.btn{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.17px;
+    line-height: 17px;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    box-shadow: none;
+    color: #030047;
+    background: transparent;
+    border: 2px solid #030047;
+    transition: .3s all ease-in-out;
+    outline: 0;
+}
+span.button-text{
+    display: block;
+    position: relative;
+    border-radius: 0.8px;
+    transform: translate(10px,-10px);
+    transition: transform 150ms ease-out;
+}
+span.button-hover {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.05rem;
+    background-color: #ffcc3e;
+    box-shadow: 0 0 0 1px #ffcc3e;
+    transform: translate(5px,-10px);
+    transition: transform 150ms ease-out;
+    z-index: -1;
+    border: 2px solid #030047;
+    margin-left: 4px;
+    }
+    .main-button a.btn:hover {
+        background-color: #ffcc3e;
+        transition: .3s all ease-in-out;
+    }
+    
+    .main-button a.btn:hover span.button-text {
+        transform: translate(0px,-4px);
+    }
+    
+    .main-button a.btn:hover span.button-hover {
+        transform: translate(-2px,-4px);
+        transition: transform 150ms ease-out;
+    }
+    
+    
